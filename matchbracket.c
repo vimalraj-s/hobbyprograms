@@ -102,22 +102,12 @@ int main()
 
     index = count;
     do {
-//    for(index = 0; index<=count; index++) {
-        //printf("enter the %d th symbol\n", index);
-        //printf("enter the symbol\n");
-        //scanf("%c", &symbol);
-        fflush(NULL);
-        //fflush(stdin);
         symbol = getchar();
         if(symbol == '\n') {
             symbol = getchar();
         }
-        fflush(NULL);
-        //fflush(stdin);
         index--;
         //printf("entered character is %c\n", symbol);
-        fflush(NULL);
-        //fflush(stdin);
 
         if((symbol == '{')||(symbol == '(')||(symbol == '[')) {
             pushSymbolToStack(&s, symbol);
